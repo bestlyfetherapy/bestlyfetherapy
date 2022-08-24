@@ -172,11 +172,11 @@ h5 {
 
 @media (max-width: 767px) {
     h1 {
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
 
     h2 {
-        font-size: 1.4em;
+        font-size: 1.5em;
     }
 
     h5 {
@@ -190,7 +190,7 @@ h5 {
 }
 
 .indent {
-    padding-left: 40px;
+    padding-left: 30px;
 }
 
 body {
@@ -242,7 +242,7 @@ p {
     color: #ffffff;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 8px 20px;
     font-size: 1rem;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     text-decoration: none;
@@ -261,7 +261,7 @@ p {
 
 .btn-secondary {
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 8px 10px;
     background-color: #ffffff;
     top: 25px;
     text-decoration: none;
@@ -307,6 +307,13 @@ p {
     display: flex;
     flex-direction: row;
     vertical-align: top;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .center-col {
@@ -553,6 +560,15 @@ a:focus {
         font-size: 1.5rem;
     }
 
+    .nav-link:last-of-type {
+        padding-bottom: 0;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus {
+        color: #333333;
+    }
+
     .nav-item:first-of-type {
         margin-top: 20px;
         border-top: 1px solid #E2E8E6;
@@ -561,8 +577,13 @@ a:focus {
     .nav-item {
         padding: 0;
         border-bottom: 1px solid #E2E8E6;
-
     }
+
+    .nav-item:last-of-type {
+        border-bottom: none;
+    }
+
+
 }
 
 .nav-link:hover {
@@ -613,13 +634,14 @@ li.nav-item:hover:after {
 .dropdown-item:focus,
 .dropdown-item:hover {
     background-color: #F2ECDA;
+    color: #333333;
 
 }
 
-.dropdown-divider {
+/* .dropdown-divider {
     margin: 3px 0;
     border-color: #E2BE69;
-}
+} */
 
 .navbar-toggler {
     border: none;
@@ -843,7 +865,7 @@ iframe {
 .send-button {
     background-color: #698781;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 6px 20px;
     color: #f8f5f2;
     letter-spacing: 1.5px;
     width: 100%;
@@ -965,13 +987,6 @@ iframe {
     padding: 10px 20px;
     text-align: center;
     color: #2E6FAB;
-
-}
-
-.footercontent a {
-    color: #2E6FAB;
-    text-decoration: none;
-
 }
 
 .footercontent li:after {
@@ -996,6 +1011,10 @@ iframe {
     .footercontent li {
         font-size: 20px;
     }
+
+    .footercontent li:after {
+        content: none;
+    }
 }
 
 .contactinfo {
@@ -1018,9 +1037,10 @@ iframe {
     display: flex;
     flex-direction: row;
     padding: 5px 35px;
+    font-size: .9rem;
     justify-content: space-between;
-    font-size: 1rem;
     text-decoration: none;
+
 }
 
 @media (max-width: 767px) {
@@ -1031,15 +1051,19 @@ iframe {
 
 }
 
-.footer-policies a {
+.footer-policies a,
+.footercontent a {
     color: #2E6FAB;
-
+    text-decoration: none;
 }
 
-.footer-policies a {
+.footer-policies a:hover,
+.footer-policies a:focus,
+.footercontent a:hover,
+.footercontent a:focus {
     color: #333333;
-
 }
+
 
 /* ---------------------------------HOME HERO----------------------------------- */
 .homebg {
@@ -1054,7 +1078,7 @@ iframe {
     .homebg {
         background-image: url('Images/Sky-HeroImage-mobile.png');
         background-position: 0%;
-        height: 420px;
+        height: 460px;
 
     }
 }
@@ -1080,7 +1104,7 @@ iframe {
 }
 
 .hero-btn {
-    padding: 10px 15px;
+    padding: 6px 15px;
     margin-top: 10px;
     background-color: #EAE0B4;
     color: #333333;
@@ -1198,14 +1222,14 @@ iframe {
 
 .aboutpic {
     border-radius: 250px 250px 5px 5px;
-    height: 380px;
+    height: 400px;
     width: auto;
     object-fit: cover;
     border: 2px solid #333333;
     object-position: top;
     float: left;
-    margin-right: 50px;
-    margin-bottom: 25px;
+    margin-right: 40px;
+    margin-bottom: 15px;
 
 }
 
@@ -1300,7 +1324,7 @@ iframe {
 
 .therapybtn {
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 8px 10px;
     background-color: #ffffff;
     top: 25px;
     text-decoration: none;
@@ -1486,15 +1510,16 @@ iframe {
     }
 
     .container {
-        left: 7px;
-        padding-left: 15px;
-        padding-right: 30px;
+        padding-left: 10px;
+        padding-right: 15px;
         padding-bottom: 20px;
+        width: 107%;
+        left: -7px;
     }
 
     .inner {
-        left: -15px;
-        top: 15px;
+        left: -10px;
+        top: 10px;
         padding: 15px 10px;
     }
 
@@ -1605,6 +1630,11 @@ iframe {
         width: 100%;
     }
 
+    .costspage {
+        padding-bottom: 20px;
+    }
+
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1618,14 +1648,29 @@ iframe {
     background-color: #DFEBF6;
     color: #333333;
     cursor: pointer;
-    padding: 12px 18px;
+    padding: 12px 15px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
     font-size: 18px;
     transition: 0.4s;
-    margin: 5px 0;
+    margin: 5px 10px 5px 0;
+}
+
+.accordion span:first-of-type {
+    margin-right: 10px;
+}
+
+.faqdown:after {
+    content: '+';
+    font-size: 20px;
+    color: #333333;
+}
+
+.active:after {
+    content: "−";
+    color: #f8f5f2;
 }
 
 .active,
@@ -1645,9 +1690,8 @@ iframe {
 
 }
 
-.accordion:after {
+/* .accordion:after {
     content: '+';
-    /* Unicode character for "plus" sign (+) */
     font-size: 20px;
     color: #333333;
     float: right;
@@ -1656,11 +1700,14 @@ iframe {
 
 .active:after {
     content: "−";
-    /* Unicode character for "minus" sign (-) */
     color: #f8f5f2;
-}
+} */
 
 @media (max-width: 767px) {
+    .accordion {
+        height: 78px;
+    }
+
     .panel {
         padding: 20px 0px 10px 0px;
     }
