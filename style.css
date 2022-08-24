@@ -410,7 +410,6 @@ p {
 
     .medium--hide {
         display: none;
-
     }
 
 }
@@ -582,8 +581,6 @@ a:focus {
     .nav-item:last-of-type {
         border-bottom: none;
     }
-
-
 }
 
 .nav-link:hover {
@@ -635,7 +632,6 @@ li.nav-item:hover:after {
 .dropdown-item:hover {
     background-color: #F2ECDA;
     color: #333333;
-
 }
 
 /* .dropdown-divider {
@@ -679,6 +675,15 @@ li.nav-item:hover:after {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .navbar>.container-fluid {
+        border-bottom: 1px solid #cccccc;
+    }
+
+    .nav-item:first-of-type {
+        margin-top: 20px;
+        border-top: 1px solid #E2E8E6;
+    }
+
     .navbar {
         padding-bottom: 0px;
     }
@@ -711,8 +716,17 @@ li.nav-item:hover:after {
         margin: 0;
     }
 
-    .navbar>.container-fluid {
-        border-bottom: 1px solid #cccccc;
+    li.nav-item:after {
+        content: none;
+    }
+
+    .nav-item {
+        padding: 0;
+        border-bottom: 1px solid #E2E8E6;
+    }
+
+    .nav-item:last-of-type {
+        border-bottom: none;
     }
 }
 
@@ -962,6 +976,9 @@ iframe {
 
     .contact-img2 {
         margin-right: 0;
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
     }
 }
 
@@ -1157,15 +1174,6 @@ iframe {
     line-height: 1.8;
 }
 
-@media (max-width: 767px) {
-    .welcome-message {
-        padding-left: 0px;
-        font-size: 1.1rem;
-
-
-    }
-}
-
 .headshot {
     border-radius: 250px 250px 5px 5px;
     height: 370px;
@@ -1174,15 +1182,6 @@ iframe {
     border: 2px solid #333333;
     object-position: top;
     text-align: center;
-}
-
-@media (max-width: 767px) {
-    .headshot {
-        padding-right: 0px;
-        margin-bottom: 25px;
-        height: 300px;
-
-    }
 }
 
 .getstarted {
@@ -1202,6 +1201,17 @@ iframe {
 }
 
 @media (max-width: 767px) {
+    .welcome-message {
+        padding-left: 0px;
+        font-size: 1.1rem;
+    }
+
+    .headshot {
+        padding-right: 0px;
+        margin-bottom: 25px;
+        height: 300px;
+    }
+
     .getstarted {
         background-image: none;
     }
@@ -1213,8 +1223,20 @@ iframe {
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .welcome-message {
+        padding-left: 35px;
+    }
+
     .getstarted {
         background-position: 100% -20%;
+    }
+
+    .headshot {
+        height: 380px;
+    }
+
+    .aboutme {
+        float: right;
     }
 }
 
@@ -1557,6 +1579,10 @@ iframe {
         width: auto;
 
     }
+
+    .olive1 {
+        margin-top: 30px;
+    }
 }
 
 .pcit {
@@ -1640,6 +1666,10 @@ iframe {
 @media (min-width: 768px) and (max-width: 1024px) {
     .narrow-txt {
         width: 100%;
+    }
+
+    .costspage {
+        padding-bottom: 40px;
     }
 }
 
