@@ -348,7 +348,15 @@ p {
     .even {
         width: 100%;
     }
+
+    .btn-secondary {
+
+        padding: 9px 10px;
+        margin-right: 15px;
+
+    }
 }
+
 
 .super-narrow {
     padding: 50px 250px;
@@ -456,7 +464,12 @@ p {
 }
 
 .small-break {
-    padding: 30px 0;
+    padding: 25px 0;
+}
+
+.super-small-break {
+    padding: 20px 0;
+
 }
 
 .leftpadding {
@@ -856,6 +869,7 @@ iframe {
     display: flex;
     flex-direction: row;
     vertical-align: top;
+    margin-bottom: 20px;
 }
 
 .contactform {
@@ -1114,7 +1128,7 @@ iframe {
 @media (max-width: 767px) {
     .homebg {
         background: linear-gradient(0deg, rgba(125, 142, 168, 0.4), rgba(125, 142, 168, 0.4)), url('Images/Sky-HeroImage-mobile.png');
-        background-position: 0%;
+        background-position: 50% 40%;
         height: 460px;
 
     }
@@ -1195,7 +1209,7 @@ iframe {
 }
 
 .bestlyfe {
-    width: 25%;
+    width: 15%;
     position: relative;
 }
 
@@ -1231,6 +1245,7 @@ iframe {
     .welcome-message {
         padding-left: 0px;
         font-size: 1.1rem;
+        line-height: 2.1;
     }
 
     .bestlyfe {
@@ -1242,6 +1257,7 @@ iframe {
         padding-right: 0px;
         margin-bottom: 25px;
         height: 300px;
+        float: none;
     }
 
     .getstarted {
@@ -1329,7 +1345,7 @@ iframe {
 
 .centertext {
     text-align: center;
-    padding: 25px 250px;
+    padding: 25px 250px 0 250px;
 }
 
 @media (max-width: 767px) {
