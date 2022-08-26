@@ -141,6 +141,7 @@ html {
 
 b {
     font-weight: 600;
+    vertical-align: top;
 }
 
 h1 {
@@ -215,6 +216,12 @@ p {
 
 .justify-txt {
     text-align: justify;
+    hyphens: auto;
+}
+
+.italic-txt {
+    font-style: italic;
+    vertical-align: top;
 }
 
 .hr-gold {
@@ -230,6 +237,11 @@ p {
         width: auto;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .justify-txt {
+        text-align: left;
+        hyphens: auto;
     }
 
 }
@@ -866,8 +878,12 @@ li.nav-item:hover:after {
 
 
 /*----------------------------------- CONTACT FORMS ----------------------------------*/
-iframe {
-    margin-top: 15px;
+
+.form-frame {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 480px;
 }
 
 .contact-col {
@@ -956,7 +972,8 @@ iframe {
 }
 
 .contact-img2 {
-    height: 490px;
+    margin-top: 20px;
+    height: 460px;
     width: 380px;
     object-fit: cover;
     margin-right: 50px;
@@ -1227,7 +1244,7 @@ iframe {
     object-position: top;
     text-align: center;
     float: left;
-    margin-right: 25px;
+    margin-right: 40px;
 }
 
 .getstarted {
@@ -1328,6 +1345,8 @@ iframe {
 .aboutbio {
     padding-left: 60px;
 }
+
+
 
 @media (max-width: 767px) {
     .aboutbio {
@@ -1717,6 +1736,7 @@ iframe {
     .costspage {
         background-position: 10% 100%;
     }
+
 }
 
 .narrow-txt {
@@ -1758,6 +1778,10 @@ iframe {
 
     .costspage {
         padding-bottom: 40px;
+    }
+
+    .pcit {
+        width: 370px;
     }
 }
 
