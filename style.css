@@ -1150,8 +1150,8 @@ li.nav-item:hover:after {
 /* ---------------------------------HOME HERO----------------------------------- */
 .homebg {
     height: 550px;
-    background: linear-gradient(rgba(150, 150, 150, 0.05), rgba(0, 35, 82, 0.2)), url('Images/hero-beach.jpg');
-    /* background: url('Images/sandro-steiner-zr5XphbVS3k-unsplash.jpg'); */
+    background: linear-gradient(rgba(150, 150, 150, .1), rgba(0, 35, 82, 0.1)), url('Images/hero-beach.jpg');
+    /* background: url('Images/hero-beach.jpg'); */
     background-size: cover;
     background-position: 50% 40%;
 
