@@ -196,7 +196,7 @@ h5 {
 }
 
 .indent {
-    padding-left: 30px;
+    padding-left: 31px;
 }
 
 body {
@@ -259,7 +259,7 @@ p {
     color: #ffffff;
     border: none;
     border-radius: 5px;
-    padding: 8px 20px;
+    padding: 10px 20px;
     font-size: 1rem;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     text-decoration: none;
@@ -1149,61 +1149,56 @@ li.nav-item:hover:after {
 
 /* ---------------------------------HOME HERO----------------------------------- */
 .homebg {
-    height: 500px;
-    background: linear-gradient(0deg, rgba(125, 142, 168, 0.4), rgba(125, 142, 168, 0.4)), url('Images/Heroimage.png');
+    height: 550px;
+    background: linear-gradient(rgba(150, 150, 150, 0.05), rgba(0, 35, 82, 0.2)), url('Images/hero-beach.jpg');
+    /* background: url('Images/sandro-steiner-zr5XphbVS3k-unsplash.jpg'); */
     background-size: cover;
-    background-position: 50% 70%;
+    background-position: 50% 40%;
 
-}
-
-@media (max-width: 767px) {
-    .homebg {
-        background: linear-gradient(0deg, rgba(125, 142, 168, 0.4), rgba(125, 142, 168, 0.4)), url('Images/Sky-HeroImage-mobile.png');
-        background-position: 50% 40%;
-        height: 460px;
-
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .homebg {
-        background: linear-gradient(0deg, rgba(125, 142, 168, 0.4), rgba(125, 142, 168, 0.4)), url('Images/Sky-HeroImage-mobile.png');
-    }
 }
 
 .hero-message {
     position: relative;
-    left: 40px;
-    top: 50%;
-    text-align: left;
-    width: 50%;
+    top: 20%;
+    text-align: center;
+    width: 100%;
+}
+
+.hero-message h1 {
+    font-size: 3.5em;
+    color: #0e0e0e;
+}
+
+.txt-shadow {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .sub-heading {
     margin-top: 10px;
-    margin-bottom: 5px;
-    font-size: 1rem;
+    margin-bottom: 20px;
+    font-size: 1.3em;
     display: block;
+    color: #0e0e0e;
 }
 
 .hero-btn {
-    padding: 6px 15px;
+    padding: 11px 16px;
     margin-top: 10px;
-    background-color: #EAE0B4;
-    color: #333333;
+    /* background-color: #EAE0B4; */
+    background-color: #0e0e0e;
+    color: #ffffff;
     border: none;
     font-size: 1rem;
     border-radius: 5px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     text-decoration: none;
-    position: absolute;
     font-weight: 600;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-    background-color: #333333;
-    color: #EAE0B4
+    background-color: #EAE0B4;
+    color: #0e0e0e;
 }
 
 .getstarted .indent {
@@ -1212,26 +1207,39 @@ li.nav-item:hover:after {
 
 @media (max-width: 767px) {
     .hero-message {
-        left: 10px;
-        top: 35%;
+        top: 20%;
         word-break: normal;
-        text-align: left;
+        text-align: center;
         width: 100%;
     }
 
-    .hero-btn {
-        padding: 7px 15px;
-        font-weight: normal;
+    .hero-message h1 {
+        font-size: 2.5em;
+        color: #0e0e0e;
     }
 
-    .sub-heading {
-        width: 50%;
+
+    .hero-btn {
+        padding: 11px 16px;
+        font-weight: normal;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .hero-message {
-        top: 40%;
+        top: 20%;
+
+    }
+
+    .hero-message h1 {
+        font-size: 3em;
+    }
+
+    .sub-heading {
+        word-break: normal;
+        width: 40%;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
@@ -1291,8 +1299,9 @@ li.nav-item:hover:after {
     }
 
     .headshot {
-        padding-right: 0px;
+        padding-right: 0;
         margin-bottom: 25px;
+        margin-right: 0;
         height: 300px;
         float: none;
     }
