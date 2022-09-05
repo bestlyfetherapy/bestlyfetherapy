@@ -222,6 +222,8 @@ p {
 .italic-txt {
     font-style: italic;
     vertical-align: top;
+    position: relative;
+    top: -2px;
 }
 
 .hr-gold {
@@ -242,6 +244,11 @@ p {
     .justify-txt {
         text-align: left;
         hyphens: auto;
+    }
+
+    .italic-txt {
+        position: relative;
+        top: -5px;
     }
 
 }
