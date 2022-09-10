@@ -1976,7 +1976,7 @@ li.nav-item:hover:after {
     background-position: 50% 100%;
 }
 
-.hero-message {
+.althero-message {
     position: relative;
     top: 20%;
     text-align: left;
@@ -1989,7 +1989,7 @@ li.nav-item:hover:after {
         background-position: 25% 100%;
     }
 
-    .hero-message {
+    .alt-hero-message {
         position: relative;
         top: 30%;
         text-align: left;
