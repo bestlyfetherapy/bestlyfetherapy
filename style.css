@@ -405,8 +405,7 @@ p {
 
     .narrow,
     .wide,
-    .super-narrow,
-    .narrow-alt {
+    .super-narrow {
         padding: 0 75px;
     }
 
@@ -414,7 +413,9 @@ p {
         width: 600px;
     }
 
-
+    .narrow-alt {
+        padding: 0 60px;
+    }
 
 }
 
@@ -1659,7 +1660,7 @@ li.nav-item:hover:after {
 
 .flowerimg {
     margin-right: 35px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .cs {
@@ -1837,7 +1838,7 @@ li.nav-item:hover:after {
     }
 
     .whoiworkwith {
-        height: 250px;
+        height: 320px;
     }
 }
 
