@@ -1722,7 +1722,7 @@ li.nav-item:hover:after {
     }
 
     .whoiworkwith {
-        height: 350px;
+        height: 300px;
     }
 
     .whoiworkwith p {
@@ -1748,7 +1748,7 @@ li.nav-item:hover:after {
     }
 
     .olive1 {
-        margin-top: 50px;
+        margin-top: 40px;
         margin-right: 50px
     }
 }
@@ -1838,8 +1838,9 @@ li.nav-item:hover:after {
     }
 
     .whoiworkwith {
-        height: 320px;
+        height: 300px;
     }
+
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1179px) {
@@ -1847,6 +1848,9 @@ li.nav-item:hover:after {
         height: 380px;
         width: 350px;
     }
+
+
+
 }
 
 .narrow-txt {
