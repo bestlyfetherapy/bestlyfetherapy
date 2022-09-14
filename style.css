@@ -381,7 +381,8 @@ p {
     padding: 50px 250px;
 }
 
-.narrow {
+.narrow,
+.narrow-alt {
     padding: 50px 200px;
 }
 
@@ -394,7 +395,8 @@ p {
 
     .narrow,
     .wide,
-    .super-narrow {
+    .super-narrow,
+    .narrow-alt {
         padding: 0 25px;
     }
 }
@@ -403,13 +405,16 @@ p {
 
     .narrow,
     .wide,
-    .super-narrow {
+    .super-narrow,
+    .narrow-alt {
         padding: 0 75px;
     }
 
     .even {
         width: 600px;
     }
+
+
 
 }
 
@@ -421,6 +426,9 @@ p {
         padding: 0 150px;
     }
 
+    .narrow-alt {
+        padding: 0 140px;
+    }
 }
 
 .small--hide {
@@ -754,6 +762,7 @@ li.nav-item:hover:after {
         padding-left: 0;
         padding-bottom: 0;
         margin-bottom: 10px;
+        height: 50px;
     }
 
     .mb-2 {
@@ -1563,6 +1572,12 @@ li.nav-item:hover:after {
     .specialties {
         padding: 0 50px 20px 0;
     }
+
+    .special-col .img-col {
+        width: 350px;
+        height: 480px;
+
+    }
 }
 
 .olive1 {
@@ -1802,18 +1817,35 @@ li.nav-item:hover:after {
 
     }
 
+
+
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1180px) {
     .clinicalsupervision {
         object-position: bottom;
     }
 
     .flowerimg {
-        height: 340px;
-        width: 350px;
+        height: 380px;
+        width: 300px;
     }
 
+    .specialties {
+        padding: 0 50px 20px 0;
+
+    }
+
+    .whoiworkwith {
+        height: 250px;
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1179px) {
+    .flowerimg {
+        height: 380px;
+        width: 350px;
+    }
 }
 
 .narrow-txt {
