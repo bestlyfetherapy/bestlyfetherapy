@@ -243,7 +243,7 @@ p {
 
     .justify-txt {
         text-align: left;
-        hyphens: auto;
+        hyphens: none;
     }
 
     .italic-txt {
@@ -1742,8 +1742,11 @@ li.nav-item:hover:after {
 }
 
 .outcomes li {
-    padding: 6px 0 10px 25px;
+    padding: 6px 0 10px 0px;
+    margin-left: 20px;
+    list-style: circle;
 }
+
 
 .outcomes div {
     margin-left: 25px;
